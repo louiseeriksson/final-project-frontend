@@ -12,7 +12,7 @@ export const Home = () => {
 
       <main>
         <section className='featured-products'>
-          <Link
+          {/* <Link
             to="/product/:productId">
             <ProductCard />
           </Link>
@@ -31,7 +31,7 @@ export const Home = () => {
           <Link
             to="/product/:productId">
             <ProductCard />
-          </Link>
+          </Link> */}
         </section>
 
         <section>

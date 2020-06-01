@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 export const ProductDetails = () => {
   return (
     <div>
-      <Link
+      {/* <Link
         to="/text">
         <h2>
           Text
         </h2>
-      </Link>
+      </Link> */}
     </div>
   )
 }

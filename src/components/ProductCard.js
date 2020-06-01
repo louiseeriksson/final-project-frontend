@@ -9,10 +9,10 @@ export const ProductCard = () => {
       <h3>Product Name</h3>
       <p>Info about product</p>
       <h2>200 kr</h2>
-      <Link
+      {/* <Link
         to="/product/:productId">
         <ProductDetails />
-      </Link>
+      </Link> */}
     </div>
   )
 }

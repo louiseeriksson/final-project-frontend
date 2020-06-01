@@ -5,7 +5,7 @@ import { ProductCard } from './ProductCard'
 export const ProductPage = () => {
   return (
     <div>
-      <Link
+      {/* <Link
         to="/product">
         <ProductCard />
       </Link>
@@ -28,7 +28,7 @@ export const ProductPage = () => {
       <Link
         to="/product">
         <ProductCard />
-      </Link>
+      </Link> */}
     </div>
   )
 }
