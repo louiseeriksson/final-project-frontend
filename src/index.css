@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+a {
+  text-decoration: none;
+}
+header {
+  background-image: url(./images/cactuses.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  padding: 100px 0;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+header h1 {
+font: roboto;
+font-size: 100px;
+font-weight: 800;
+color: white;
+margin: 60px
+}
