@@ -30,7 +30,6 @@ header {
 header h1 {
 font-family: 'Montserrat', sans-serif;
 font-size: 100px;
-font-weight: 800;
 color: white;
 margin: 60px;
 padding-bottom: 30px;
@@ -53,4 +52,18 @@ header h1:hover {
   height: 400px;
   border: 1px solid green;
   margin: 2px
+}
+
+.footer {
+  background-color: #bbc7ca;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h4 {
+font-size: 30px;
 }
