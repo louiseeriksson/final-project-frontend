@@ -5,10 +5,10 @@ export const Header = () => {
   return (
     <div>
       <header>
-        {/* <Link
-          to="/"> */}
-        <h1>växt.nu</h1>
-        {/* </Link> */}
+        <Link
+          to='/'>
+          <h1>växt.nu</h1>
+        </Link>
       </header>
     </div>
   )

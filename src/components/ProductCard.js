@@ -4,7 +4,7 @@ import { ProductDetails } from './ProductDetails'
 
 export const ProductCard = () => {
   return (
-    <div>
+    <div className='product-card'>
       {/* <img>image</img> */}
       <h3>Product Name</h3>
       <p>Info about product</p>

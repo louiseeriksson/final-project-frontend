@@ -28,9 +28,29 @@ header {
 }
 
 header h1 {
-font: roboto;
+font-family: 'Montserrat', sans-serif;
 font-size: 100px;
 font-weight: 800;
 color: white;
-margin: 60px
+margin: 60px;
+padding-bottom: 30px;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+  text-shadow: 1px 1px 25px rgb(182, 180, 180);
+}
+
+.featured-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px
+}
+
+.product-card {
+  width: 300px;
+  height: 400px;
+  border: 1px solid green;
+  margin: 2px
 }

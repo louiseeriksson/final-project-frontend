@@ -12,26 +12,16 @@ export const Home = () => {
 
       <main>
         <section className='featured-products'>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+
           {/* <Link
             to="/product/:productId">
             <ProductCard />
-          </Link>
-          <Link
-            to="/product/:productId">
-            <ProductCard />
-          </Link>
-          <Link
-            to="/product/:productId">
-            <ProductCard />
-          </Link>
-          <Link
-            to="/product/:productId">
-            <ProductCard />
-          </Link>
-          <Link
-            to="/product/:productId">
-            <ProductCard />
           </Link> */}
+
         </section>
 
         <section>
