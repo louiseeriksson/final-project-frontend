@@ -88,9 +88,9 @@ header h1:hover, h2:hover {
   padding: 50px;
 }
 
-h4 {
-font-size: 30px;
-margin: 5px;
+  h4 {
+  font-size: 30px;
+  margin: 5px;
 }
 
 /*  Media queries  */

@@ -12,9 +12,9 @@ export const ProductCard = ({ product }) => {
   return (
     <div className='product-card'>
       {/* <img>image</img> */}
-      <h3>Product Name</h3>
+      <h3>{product.title}</h3>
       <p>Info about product</p>
-      <h2>{ProductDetails.price}:-</h2>
+      <h2>{product.price}:-</h2>
       <button
         type='button'
         onClick={() => dispatch(cart.actions.addItem(product))}>

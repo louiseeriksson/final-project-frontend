@@ -9,10 +9,10 @@ export const Home = () => {
 
         {/* These products cant be added to the cart yet, have to figure out how to choose a few featured products and show them here but still make them connected to the cart */}
 
+        {/* <ProductCard />
         <ProductCard />
         <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard /> */}
 
       </section>
 

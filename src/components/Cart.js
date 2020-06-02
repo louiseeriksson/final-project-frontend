@@ -12,7 +12,6 @@ export const Cart = () => {
   return (
     <section className='cart'>
       <div className='total'>
-        <span>Image?</span>
         <div className='amount'>Total price: {totalPrice}:-</div>
       </div>
       <ul className='items'>

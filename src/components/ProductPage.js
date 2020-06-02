@@ -13,30 +13,7 @@ export const ProductPage = () => {
         <ProductCard key={product.id} product={product} />
       ))}
 
-      {/* <Link
-        to="/product">
-        <ProductCard />
-      </Link>
-      <Link
-        to="/product">
-        <ProductCard />
-      </Link>
-      <Link
-        to="/product">
-        <ProductCard />
-      </Link>
-      <Link
-        to="/product">
-        <ProductCard />
-      </Link>
-      <Link
-        to="/product">
-        <ProductCard />
-      </Link>
-      <Link
-        to="/product">
-        <ProductCard />
-      </Link> */}
+      {/* add link to product details */}
     </div>
   )
 }

@@ -8,17 +8,17 @@ export const CartItem = ({ product }) => {
   const dispatch = useDispatch()
 
   return (
-    <li>
+    <div>
       <span>image</span>
       <div className='info'>
-        <span className='quantity'>x{product.quantity}</span>
-        <span className='sum'>{product.price * product.quantity}:-</span>
+        <p className='quantity'>x{product.quantity}</p>
+        <p className='price'>{product.price}:-</p>
       </div>
 
       <span className='actions'>
         <button type='button' onClick={() => dispatch(cart.actions.removeItem(product))}>-</button>
         <button type='button' onClick={() => dispatch(cart.actions.addItem(product))}>+</button>
       </span>
-    </li>
+    </div>
   )
 }
