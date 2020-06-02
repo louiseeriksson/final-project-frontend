@@ -24,8 +24,8 @@ export const Home = () => {
 
         </section>
 
-        <section>
-          <img src='../images/greenhouse.jpg' alt="our greenhouse" />
+        <section className='highlight-section'>
+          <img src={require('images/greenhouse.jpg')} alt="our greenhouse" />
         </section>
 
         <section>
