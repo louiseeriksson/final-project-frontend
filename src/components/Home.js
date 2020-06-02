@@ -25,7 +25,7 @@ export const Home = () => {
         </section>
 
         <section className='highlight-section'>
-          <img src={require('images/greenhouse.jpg')} alt="our greenhouse" />
+          <img src={process.env.PUBLIC_URL + 'images/greenhouse.jpg'} alt="our greenhouse" />
         </section>
 
         <section>
