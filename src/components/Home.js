@@ -6,15 +6,13 @@ export const Home = () => {
   return (
     <main>
       <section className='featured-products'>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
 
-        {/* <Link
-            to="/product/:productId">
-            <ProductCard />
-          </Link> */}
+        {/* These products cant be added to the cart yet, have to figure out how to choose a few featured products and show them here but still make them connected to the cart */}
+
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
 
       </section>
 
