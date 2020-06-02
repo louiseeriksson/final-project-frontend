@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
+import { useParams } from 'react-router-dom'
+// import data
 
 export const ProductDetails = () => {
+  const params = useParams()
   return (
     <div>
       {/* <Link

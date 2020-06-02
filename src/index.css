@@ -15,6 +15,11 @@ code {
 a {
   text-decoration: none;
 }
+
+.active {
+border-bottom: 1px solid white;
+}
+
 header {
   background-image: url(./images/cactuses.jpg);
   background-repeat: no-repeat; 
@@ -24,18 +29,30 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
 }
 
-header h1 {
-font-family: 'Montserrat', sans-serif;
-font-size: 70px;
-color: white;
-margin: 30px;
-padding-bottom: 30px;
+  .nav-bar {
+  display: flex;
+  padding-bottom: 20px;
 }
 
-header h1:hover {
+.nav-bar h2 {
+  color: white;
+  margin: 7px;
+  font-size: 17px;
+}
+
+  header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  color: white;
+  margin: 30px;
+  padding-bottom: 30px;
+}
+
+header h1:hover, h2:hover {
   transform: scale(1.05);
   text-shadow: 1px 1px 25px rgb(182, 180, 180);
 }
@@ -94,6 +111,11 @@ margin: 5px;
     font-size: 100px;
     margin: 60px;
     }
+
+  .nav-bar h2 {
+    margin: 20px;
+    font-size: 30px;
+  }
 
 }
 
