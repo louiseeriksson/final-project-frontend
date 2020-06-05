@@ -1,38 +1,29 @@
 import React, { useEffect, useState } from 'react'
-import { ProductCard } from './ProductCard'
-import { Footer } from './Footer'
+import { ProductList } from './ProductList'
 
-export const Home = () => {
+export const Home = (props) => {
+
+  // is following function ok?
+  useEffect(() => {
+    const script = document.createElement("script")
+    script.src = "https://cdn.curator.io/published/06e53367-5e99-4513-b597-e96cf8f67876.js"
+    script.async = true
+    document.body.appendChild(script)
+
+    // hämta produkter som är "featured" (via Redux) i actions (men inte i en fetch just här) 
+    // /products?featured=true
+  })
+
   return (
     <main>
-      <section className='featured-products'>
-
-        {/* These products cant be added to the cart yet, have to figure out how to choose a few featured products and show them here but still make them connected to the cart */}
-
-        {/* <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard /> */}
-
-      </section>
+      {/* <ProductList products={props.products} /> */}
 
       <section className='highlight-section'>
-        <img src={require('images/greenhouse.jpg')} alt="our greenhouse" />
+        {/* <img src={require('images/greenhouse.jpg')} alt="our greenhouse" /> */}
       </section>
 
       <section>
-
-        INSTAGRAM FEED
-          {/* <div id="curator-feed-default-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div> */}
-
-
-        {/* (function(){
-          var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-          i.src = "https://cdn.curator.io/published/06e53367-5e99-4513-b597-e96cf8f67876.js";
-          e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-          })() */}
-
-
+        <div id="curator-feed-default-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
       </section>
     </main>
   )
