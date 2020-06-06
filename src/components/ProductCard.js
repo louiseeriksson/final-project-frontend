@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useDispatch } from 'react-redux'
 import { cart } from 'reducers/cart'
-import { Link } from 'react-router-dom'
-import { ProductDetails } from './ProductDetails'
-import { products } from 'reducers/products'
 
 export const ProductCard = ({ product }) => {
 
@@ -13,7 +10,7 @@ export const ProductCard = ({ product }) => {
     <div className='product-card'>
       {/* <img>image</img> */}
       <h3>{product.title}</h3>
-      <p>Info about product</p>
+      <p>{product.info}</p>
       <h2>{product.price}:-</h2>
       <button
         type='button'
