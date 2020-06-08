@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ProductList } from './ProductList'
+import { InstagramFeed } from './InstagramFeed'
 
 export const Home = (props) => {
 
@@ -22,9 +23,8 @@ export const Home = (props) => {
         {/* <img src={require('images/greenhouse.jpg')} alt="our greenhouse" /> */}
       </section>
 
-      <section>
-        <div id="curator-feed-default-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-      </section>
+      <InstagramFeed />
+
     </main>
   )
 }

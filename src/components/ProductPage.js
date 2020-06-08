@@ -16,6 +16,7 @@ export const ProductPage = (props) => {
 
   return (
     <div className='products'>
+
       <LoadingIndicator />
 
       {allProducts.map((product) => (

@@ -77,6 +77,10 @@ header h1:hover, h2:hover {
   max-width: -webkit-fill-available
 }
 
+.instagram-text {
+  display: none;
+}
+
 .footer {
   background-color: #bbc7ca;
   font-family: 'Montserrat', sans-serif;
