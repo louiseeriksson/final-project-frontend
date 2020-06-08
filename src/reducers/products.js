@@ -1,3 +1,6 @@
+import React from 'react'
+import thunk from 'redux-thunk'
+import { applyMiddleware, compose } from '@reduxjs/toolkit'
 import { createSlice } from '@reduxjs/toolkit'
 import { ui } from './ui'
 
@@ -9,7 +12,7 @@ export const products = createSlice({
 
   reducers: {
     setProducts: (state, action) => {
-      state.all = action.payload
+      state.all = action.payload.products
     }
   }
 })
@@ -21,7 +24,7 @@ export const fetchProducts = () => {
     fetch('https://final-project-louise.herokuapp.com/products')
       .then((res) => res.json())
       .then((json) => {
-        dispatch(products.actions.setProducts(json))
+        dispatch(products.actions.setProducts({ products: json }))
         console.log(json);
 
         dispatch(ui.actions.setLoading(false))

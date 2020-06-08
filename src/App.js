@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { combineReducers } from '@reduxjs/toolkit'
 import { createStore } from 'redux'
+import thunk from 'redux-thunk'
+import { applyMiddleware, compose } from '@reduxjs/toolkit'
 
 import { cart } from 'reducers/cart'
 import { products } from 'reducers/products'
@@ -44,10 +46,12 @@ const reducer = combineReducers({
 })
 
 const persistedState = loadFromLocalStorage()
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const store = createStore(
   reducer,
-  persistedState
+  persistedState,
+  composeEnhancer(applyMiddleware(thunk))
 )
 
 store.subscribe(() => saveToLocalStorage(store.getState()))
@@ -68,10 +72,10 @@ export const App = () => {
             <ProductDetails />
           </Route>
           <Route path='/inspiration'>
-            {/* <Inspiration /> */}
+            <Inspiration />
           </Route>
           <Route path='/about'>
-            {/* <About /> */}
+            <About />
           </Route>
           <Route path='/cart'>
             <Cart />
