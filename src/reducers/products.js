@@ -1,6 +1,3 @@
-import React from 'react'
-import thunk from 'redux-thunk'
-import { applyMiddleware, compose } from '@reduxjs/toolkit'
 import { createSlice } from '@reduxjs/toolkit'
 import { ui } from './ui'
 
@@ -31,6 +28,3 @@ export const fetchProducts = () => {
       })
   }
 }
-
-// where should i call this function?
-// fetchProducts()

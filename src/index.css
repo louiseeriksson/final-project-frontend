@@ -65,10 +65,15 @@ header h1:hover, h2:hover {
   padding: 20px
 }
 
+.home-img {
+  padding: 20px;
+  max-width: -webkit-fill-available
+}
+
 .products {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product-card {
@@ -98,13 +103,13 @@ justify-content: center;
 }
 
 .add-to-cart-btn {
-cursor: pointer;
-padding: 10px 20px;
-border: 1px solid #bbc7ca;
-border-radius: 20px;
-color: #bbc7ca;
-font-weight: 600;
-background-color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #bbc7ca;
+  border-radius: 20px;
+  color: #bbc7ca;
+  font-weight: 600;
+  background-color: white;
 }
 
 .add-to-cart-btn:hover {
@@ -113,10 +118,6 @@ background-color: white;
   text-shadow: 1px 1px 25px rgb(182, 180, 180);
   color: white;
 
-}
-
-.highlight-section img {
-  max-width: -webkit-fill-available
 }
 
 .instagram-text {
