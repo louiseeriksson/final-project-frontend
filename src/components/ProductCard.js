@@ -12,12 +12,15 @@ export const ProductCard = ({ product }) => {
       <h3>{product.title}</h3>
       <h5>{product.altName}</h5>
       <p>{product.info}</p>
-      <h2>{product.price}:-</h2>
-      <button
-        type='button'
-        onClick={() => dispatch(cart.actions.addItem(product))}>
-        LÄGG I VARUKORG
+      <div className='price-section'>
+        <h2>{product.price}:-</h2>
+        <button
+          className='add-to-cart-btn'
+          type='button'
+          onClick={() => dispatch(cart.actions.addItem(product))}>
+          LÄGG I VARUKORG
       </button>
+      </div>
       {/* <Link
         to="/product/:productId">
         <ProductDetails />
