@@ -11,14 +11,19 @@ export const Cart = () => {
 
   return (
     <section className='cart'>
-      <div className='total'>
-        <div className='amount'>Total price: {totalPrice}:-</div>
-      </div>
-      <ul className='items'>
+
+      <h2>Hej! Här är har vi samlat dina varor. Beställ innan kl 18 så skickar vi din beställning redan dagen efter 🌱</h2>
+
+      <section className='items'>
         {products.map((product) => (
           <CartItem key={product.id} product={product} />
         ))}
-      </ul>
+      </section>
+
+      <div className='total'>
+        <h2 className='amount'>TOTALT PRIS: {totalPrice}:-</h2>
+        <button>Gå till kassan</button>
+      </div>
 
     </section>
   )

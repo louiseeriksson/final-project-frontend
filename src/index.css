@@ -20,7 +20,7 @@ a {
   border-bottom: 1px solid white;
 }
 
-header {
+.header {
   background-image: url(./images/cactuses.jpg);
   background-repeat: no-repeat; 
   background-size: cover;
@@ -33,7 +33,7 @@ header {
   margin-bottom: 20px;
 }
 
-  .nav-bar {
+.nav-bar {
   display: flex;
   padding-bottom: 20px;
 }
@@ -44,7 +44,7 @@ header {
   font-size: 17px;
 }
 
-  header h1 {
+.header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 70px;
   color: white;
@@ -52,7 +52,7 @@ header {
   padding-bottom: 30px;
 }
 
-header h1:hover, h2:hover {
+.header h1:hover, .header h2:hover {
   transform: scale(1.05);
   text-shadow: 1px 1px 25px rgb(182, 180, 180);
 }
@@ -117,7 +117,24 @@ header h1:hover, h2:hover {
   transform: scale(1.05);
   text-shadow: 1px 1px 25px rgb(182, 180, 180);
   color: white;
+}
 
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item {
+  /* border: 1px solid rgb(170, 167, 167); */
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+
+.actions {
 }
 
 .instagram-text {
@@ -159,7 +176,7 @@ header h1:hover, h2:hover {
 
 @media (min-width: 900px) {
 
-  header h1 {
+  .header h1 {
     font-size: 100px;
     margin: 60px;
     }
