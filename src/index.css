@@ -65,12 +65,19 @@ header h1:hover, h2:hover {
   padding: 20px
 }
 
+.products {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
 .product-card {
   min-width: 300px;
   max-width: 300px;
   height: 400px;
   border: 1px solid green;
-  margin: 2px
+  margin: 2px;
+  color: #343d30
 }
 
 .highlight-section img {
@@ -90,6 +97,11 @@ header h1:hover, h2:hover {
   justify-content: center;
   flex-direction: column;
   padding: 50px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
 }
 
   h4 {
