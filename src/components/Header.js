@@ -5,6 +5,16 @@ export const Header = () => {
   return (
     <div>
       <header className='header'>
+
+        <div className='hamburger-menu'>
+          <div>
+            <div className='burger-line'></div>
+            <div className='burger-line'></div>
+            <div className='burger-line'></div>
+          </div>
+        </div>
+
+        {/* nav-bar shows when screen is over 700px wide */}
         <div className='nav-bar'>
           <NavLink
             to='/products'>

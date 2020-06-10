@@ -24,18 +24,33 @@ a {
   background-image: url(./images/cactuses.jpg);
   background-repeat: no-repeat; 
   background-size: cover;
-  padding: 100px 0;
+  padding: 0;
   height: 500px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
+.hamburger-menu {
+  cursor: pointer;
+  background: transparent;
+  align-self: flex-end;
+  margin: 20px 20px 100px 20px;
+}
+
+.burger-line {
+  background-color: white;
+  height: 6px;
+  width: 50px;
+  margin: 8px;
+  border-radius: 2px;
+
+}
+
 .nav-bar {
-  display: flex;
-  padding-bottom: 20px;
+  display: none
 }
 
 .nav-bar h2 {
@@ -169,6 +184,20 @@ a {
   .featured-products {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .header {
+    padding: 100px 0;
+    justify-content: center;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    padding-bottom: 20px;
   }
 
 }
