@@ -6,13 +6,34 @@ export const Header = () => {
     <div>
       <header className='header'>
 
-        <div className='hamburger-menu'>
-          <div>
+        {/* hamburger menu on smaller screens. NOT FINISHED! ADD dropdown menu and links */}
+        <nav role='navigation' className='hamburger-menu'>
+          <div className='menu-toggle'>
+            <input type="checkbox" />
             <div className='burger-line'></div>
             <div className='burger-line'></div>
             <div className='burger-line'></div>
+            <ul className='menu'>
+              <NavLink
+                to='/products'>
+                <h2>SHOP</h2>
+              </NavLink>
+              <NavLink
+                to='/inspiration'>
+                <h2>INSPIRATION</h2>
+              </NavLink>
+              <NavLink
+                to='/about'>
+                <h2>OM OSS</h2>
+              </NavLink>
+              <NavLink
+                to='/cart'>
+                <h2>VARUKORG</h2>
+              </NavLink>
+            </ul>
           </div>
-        </div>
+        </nav>
+
 
         {/* nav-bar shows when screen is over 700px wide */}
         <div className='nav-bar'>
