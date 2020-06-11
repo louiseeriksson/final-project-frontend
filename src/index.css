@@ -62,12 +62,18 @@ a {
 
 .menu-toggle a {
   text-decoration: none;
-  color: #232323;
+  color: white;
   transition: color 0.3s ease;
 }
 
-.menu-toggle a:hover {
-  color: tomato;
+/* .menu-toggle a:hover {
+  transform: scale(1.05);
+  text-shadow: 1px 1px 25px rgb(182, 180, 180);
+  border-bottom: 1px solid;
+} */
+
+.menu-toggle a:hover h2 {
+  transform: scale(1.00)
 }
 
 .menu-toggle input {
@@ -127,7 +133,7 @@ a {
   padding: 30px;
   padding-top: 110px;
   
-  background: #ededed;
+  background: #bcc7b6;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -148,6 +154,7 @@ a {
  */
  .menu-toggle input:checked ~ ul {
   transform: none;
+  margin: 33px;
 }
 
 

@@ -4,7 +4,7 @@ import { InstagramFeed } from './InstagramFeed'
 export const Inspiration = () => {
   return (
     <div>
-      <h1>Spana in vår instagram:</h1>
+      <h1>INSPIRATION</h1>
 
       {/*  // is following function ok? */}
       {useEffect(() => {
