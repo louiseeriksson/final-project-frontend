@@ -15,13 +15,16 @@ export const ProductPage = (props) => {
   const allProducts = useSelector((state) => state.products.all)
 
   return (
-    <div className='products'>
+    <div className='page-wrapper'>
+      <h1 className='page-title'>SHOP</h1>
+      <div className='products'>
 
-      <LoadingIndicator />
+        <LoadingIndicator />
 
-      {allProducts.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
+        {allProducts.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
     </div>
   )
 }

@@ -3,8 +3,8 @@ import { InstagramFeed } from './InstagramFeed'
 
 export const Inspiration = () => {
   return (
-    <div>
-      <h1>INSPIRATION</h1>
+    <div className='page-wrapper'>
+      <h1 className='page-title'>INSPIRATION</h1>
 
       {/*  // is following function ok? */}
       {useEffect(() => {

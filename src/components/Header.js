@@ -15,6 +15,10 @@ export const Header = () => {
             <div className='burger-line'></div>
             <ul className='menu'>
               <NavLink
+                to='/'>
+                <h2>VÄXT.NU</h2>
+              </NavLink>
+              <NavLink
                 to='/products'>
                 <h2>SHOP</h2>
               </NavLink>
@@ -29,6 +33,11 @@ export const Header = () => {
               <NavLink
                 to='/cart'>
                 <h2>VARUKORG</h2>
+              </NavLink>
+              <NavLink
+                to='/login'>
+                {/* add /login in backend */}
+                <h2>LOGGA IN</h2>
               </NavLink>
             </ul>
           </div>
@@ -52,6 +61,10 @@ export const Header = () => {
           <NavLink
             to='/cart'>
             <h2>VARUKORG</h2>
+          </NavLink>
+          <NavLink
+            to='/login'>
+            <h2>LOGGA IN</h2>
           </NavLink>
         </div>
         <Link

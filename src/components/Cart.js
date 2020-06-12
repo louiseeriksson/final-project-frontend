@@ -10,9 +10,8 @@ export const Cart = () => {
   ))
 
   return (
-    <section className='cart'>
-
-      <h2>Hej! Här är har vi samlat dina varor. Beställ innan kl 18 så skickar vi din beställning redan dagen efter 🌱</h2>
+    <div className='page-wrapper'>
+      <h1 className='page-title'>VARUKORG</h1>
 
       <section className='items'>
         {products.map((product) => (
@@ -24,7 +23,6 @@ export const Cart = () => {
         <h2 className='amount'>TOTALT PRIS: {totalPrice}:-</h2>
         <button>Gå till kassan</button>
       </div>
-
-    </section>
+    </div>
   )
 }
