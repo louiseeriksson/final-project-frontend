@@ -21,7 +21,7 @@ export const Cart = () => {
 
       <div className='total'>
         <h2 className='amount'>TOTALT PRIS: {totalPrice}:-</h2>
-        <button>Gå till kassan</button>
+        <button className='checkout-button'>GÅ TILL KASSAN</button>
       </div>
     </div>
   )

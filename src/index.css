@@ -287,6 +287,25 @@ align-items: center;
   color: white;
 }
 
+.checkout-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #bbc7ca;
+  border-radius: 25px;
+  color: #bbc7ca;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: white;
+  margin: 50px 20px;
+}
+
+.checkout-button:hover {
+  background-color: #bbc7ca;
+  transform: scale(1.05);
+  text-shadow: 1px 1px 25px rgb(182, 180, 180);
+  color: white;
+}
+
 .actions {
   display: flex;
   flex-direction: column;
