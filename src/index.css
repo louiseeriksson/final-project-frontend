@@ -138,8 +138,8 @@ a {
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  border-radius: 3px;
 }
 
 .menu li {
@@ -147,9 +147,6 @@ a {
   font-size: 22px;
 }
 
-/*
- * And let's slide it in from the left
- */
  .menu-toggle input:checked ~ ul {
   transform: none;
   margin: 10px;
@@ -266,9 +263,34 @@ align-items: center;
   display: flex;
   justify-content: space-between;
   width: -webkit-fill-available;
+  color: #343d30
+}
+
+.cart-item-button {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #bbc7ca;
+  border-radius: 50%;
+  color: #bbc7ca;
+  font-weight: 200;
+  background-color: white;
+  margin: 2px;
+  font-size: 22px;
+}
+
+.cart-item-button:hover {
+  background-color: #bbc7ca;
+  transform: scale(1.05);
+  text-shadow: 1px 1px 25px rgb(182, 180, 180);
+  color: white;
 }
 
 .actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .instagram-text {

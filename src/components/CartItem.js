@@ -17,8 +17,10 @@ export const CartItem = ({ product }) => {
 
       <span className='actions'>
         <h2 className='quantity'>x{product.quantity}</h2>
-        <button type='button' onClick={() => dispatch(cart.actions.removeItem(product))}>-</button>
-        <button type='button' onClick={() => dispatch(cart.actions.addItem(product))}>+</button>
+        <div>
+          <button type='button' className='cart-item-button' onClick={() => dispatch(cart.actions.removeItem(product))}>-</button>
+          <button type='button' className='cart-item-button' onClick={() => dispatch(cart.actions.addItem(product))}>+</button>
+        </div>
       </span>
     </div>
   )
