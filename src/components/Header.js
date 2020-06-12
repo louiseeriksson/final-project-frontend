@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { FixedCartPreview } from './FixedCartPreview'
 
 export const Header = () => {
   return (
@@ -71,6 +72,8 @@ export const Header = () => {
           to='/'>
           <h1>växt.nu</h1>
         </Link>
+
+        <FixedCartPreview />
       </header>
     </div>
   )
