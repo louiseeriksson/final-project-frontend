@@ -18,6 +18,7 @@ import { Inspiration } from 'components/Inspiration'
 import { About } from 'components/About'
 import { Cart } from 'components/Cart'
 import { Footer } from 'components/Footer'
+import { LogIn } from 'components/LogIn'
 
 const saveToLocalStorage = (state) => {
   try {
@@ -79,6 +80,9 @@ export const App = () => {
           </Route>
           <Route path='/cart'>
             <Cart />
+          </Route>
+          <Route path='/login'>
+            <LogIn />
           </Route>
         </Switch>
         <Footer />
