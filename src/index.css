@@ -118,7 +118,7 @@ a {
  */
  .menu-toggle input:checked ~ div {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(0px, 14px);
   background: white;
 }
 
@@ -133,7 +133,7 @@ a {
 /*
  * Ohyeah and the last one should go the other direction
  */
- .menu-toggle input:checked ~ div:nth-last-child(2) {
+.menu-toggle input:checked ~ div:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -144,7 +144,7 @@ a {
 .menu {
   position: absolute;
   width: 250px;
-  margin: 0 0 0 -20px;
+  margin: 10px 10px 10px -20px;
   padding: 50px 30px;
   background: #bcc7b6;
   list-style-type: none;
@@ -194,9 +194,9 @@ a {
 }
 
 .page-wrapper {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-title {
