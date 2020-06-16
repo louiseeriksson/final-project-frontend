@@ -302,7 +302,7 @@ a {
   color: white;
 }
 
-.checkout-button {
+.checkout-button, .form-button {
   cursor: pointer;
   padding: 10px 20px;
   border: 1px solid #bbc7ca;
@@ -314,7 +314,7 @@ a {
   margin: 50px 20px;
 }
 
-.checkout-button:hover {
+.checkout-button:hover, .form-button:hover {
   background-color: #bbc7ca;
   transform: scale(1.05);
   text-shadow: 1px 1px 25px rgb(182, 180, 180);
@@ -325,6 +325,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 .instagram-text {

@@ -15,7 +15,7 @@ export const Register = () => {
     }
     console.log(user)
 
-    let response = await fetch('http://localhost:8080/users', {
+    let response = await fetch('https://final-project-louise.herokuapp.com/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
@@ -39,36 +39,36 @@ export const Register = () => {
     <form onSubmit={handleRegister}>
       {message && <p>{message}</p>}
       <label>
-        Name:
+        Namn:
 				<input
           type="text"
           required="true"
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
-          placeholder="name"
+          placeholder="namn"
         />
       </label>
       <label>
-        Email:
+        Mail:
 				<input
           type="email"
           required="true"
           value={userEmail}
           onChange={(e) => setUserEmail(e.target.value)}
-          placeholder="e-mail"
+          placeholder="mail"
         />
       </label>
       <label>
-        Password:
+        Lösenord:
 				<input
           type="password"
           required="true"
           value={userPassword}
           onChange={(e) => setUserPassword(e.target.value)}
-          placeholder="password"
+          placeholder="lösenord"
         />
       </label>
-      <button type="submit">REGISTER</button>
+      <button className='form-button' type="submit">REGISTRERA</button>
     </form>
   )
 }
