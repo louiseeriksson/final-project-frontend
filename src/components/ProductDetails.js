@@ -1,9 +1,9 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 // import data
 
 export const ProductDetails = () => {
-  const params = useParams()
+  // const params = useParams()
   return (
     <div>
       {/* <Link

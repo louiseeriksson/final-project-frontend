@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 
 export const FixedCartPreview = () => {
 
-  const products = useSelector((store) => store.cart.items)
+  // const products = useSelector((store) => store.cart.items)
   const totalPrice = useSelector((store) => (
     store.cart.items.reduce((total, item) => (total + (item.price * item.quantity)), 0)
   ))

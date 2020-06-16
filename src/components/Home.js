@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { ProductList } from './ProductList'
+import React from 'react'
 
 export const Home = (props) => {
   return (

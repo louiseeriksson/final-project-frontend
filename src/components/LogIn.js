@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { UserNotLoggedIn } from './UserNotLoggedIn'
-import { LoggedIn } from './LoggedIn'
+// import { LoggedIn } from './LoggedIn'
 
 export const LogIn = () => {
-  const [loggedIn, setLoggedIn] = useState(false)
-  const [currentUser, setCurrentUser] = useState({})
+  // const [loggedIn, setLoggedIn] = useState(false)
+  // const [currentUser, setCurrentUser] = useState({})
 
   return (
     <div className='page-wrapper'>

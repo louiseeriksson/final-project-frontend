@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { cart } from 'reducers/cart'
-import { products } from 'reducers/products'
 
 export const CartItem = ({ product }) => {
 
