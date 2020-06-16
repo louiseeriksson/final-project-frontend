@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import { Register } from './Register'
 
-
-// flutta till en annan komponent och render loggedin/welcome beroende på användarens status
-
 export const UserNotLoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) => {
   const [userName, setUserName] = useState('')
   const [userPassword, setUserPassword] = useState('')

@@ -34,16 +34,25 @@ a {
 }
 
 .fixed-cart {
+  height: 60px;
+  width: 60px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 20px;
   right: 20px; 
   z-index: 1000;
+  color: tomato;
+  border: 2px solid tomato;
+  border-radius: 50%;
 }
 
 .fixed-cart p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   margin: 2px;
 }
 
@@ -302,7 +311,7 @@ a {
   color: white;
 }
 
-.checkout-button, .form-button {
+.checkout-button, .form-button, .crt-widget .crt-load-more {
   cursor: pointer;
   padding: 10px 20px;
   border: 1px solid #bbc7ca;
@@ -314,7 +323,7 @@ a {
   margin: 50px 20px;
 }
 
-.checkout-button:hover, .form-button:hover {
+.checkout-button:hover, .form-button:hover, .crt-widget .crt-load-more:hover {
   background-color: #bbc7ca;
   transform: scale(1.05);
   text-shadow: 1px 1px 25px rgb(182, 180, 180);
