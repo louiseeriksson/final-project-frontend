@@ -8,6 +8,7 @@ import { applyMiddleware, compose } from '@reduxjs/toolkit'
 
 import { cart } from 'reducers/cart'
 import { products } from 'reducers/products'
+import { authentication } from 'reducers/authentication'
 import { ui } from 'reducers/ui'
 
 import { Header } from 'components/Header'
@@ -43,7 +44,8 @@ const loadFromLocalStorage = () => {
 const reducer = combineReducers({
   ui: ui.reducer,
   cart: cart.reducer,
-  products: products.reducer
+  products: products.reducer,
+  authentication: authentication.reducer
 })
 
 const persistedState = loadFromLocalStorage()

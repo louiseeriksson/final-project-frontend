@@ -3,12 +3,19 @@ import { useSelector } from 'react-redux'
 
 export const FixedCartPreview = () => {
 
-
   const totalPrice = useSelector((store) => (
     store.cart.items.reduce((total, item) => (total + (item.price * item.quantity)), 0)
   ))
 
+  const sumProducts = useSelector((store) => (
+    store.cart.items.reduce((total, item) => (total + (item.quantity)), 0)
+  ))
+
   // const sumProducts = useSelector((store) => store.cart.items)
+
+  if (sumProducts === 0) {
+    return (null)
+  }
 
   return (
     <div>
@@ -17,7 +24,7 @@ export const FixedCartPreview = () => {
         {/* if empty = dont show the cart */}
 
         {/* how to show the sum of the items? */}
-        {/* <p> {sumProducts}</p> */}
+        <p>({sumProducts})</p>
 
         <p>{totalPrice}:-</p>
       </div>

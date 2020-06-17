@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { CartItem } from './CartItem'
+import { LogIn } from './LogIn'
 
 export const Cart = () => {
 
@@ -19,10 +20,13 @@ export const Cart = () => {
         ))}
       </section>
 
-      <div className='total'>
-        <h2 className='amount'>TOTALT PRIS: {totalPrice}:-</h2>
-        <button className='checkout-button'>GÅ TILL KASSAN</button>
-      </div>
+      <div className='total'></div>
+
+      {totalPrice > 0 ? <h2 className='amount'>TOTALT PRIS: {totalPrice}:-</h2> : ''}
+
+      <LogIn />
+
+      <button className='checkout-button'>GÅ TILL KASSAN</button>
     </div>
   )
 }

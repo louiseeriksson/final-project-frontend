@@ -35,11 +35,11 @@ export const Header = () => {
                 to='/cart'>
                 <h2>VARUKORG</h2>
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to='/login'>
                 {/* add /login in backend */}
-                <h2>LOGGA IN</h2>
-              </NavLink>
+              {/* <h2>LOGGA IN</h2>
+              </NavLink> */}
             </ul>
           </div>
         </nav>
@@ -63,10 +63,10 @@ export const Header = () => {
             to='/cart'>
             <h2>VARUKORG</h2>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to='/login'>
             <h2>LOGGA IN</h2>
-          </NavLink>
+          </NavLink> */}
         </div>
         <Link
           to='/'>
@@ -75,6 +75,6 @@ export const Header = () => {
 
         <FixedCartPreview />
       </header>
-    </div>
+    </div >
   )
 }
