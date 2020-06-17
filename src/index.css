@@ -274,6 +274,14 @@ a {
   color: white;
 }
 
+.about-wrapper {
+  margin: 20px;
+}
+
+.about-wrapper p {
+  color: #343d30;
+}
+
 .items {
   display: flex;
   flex-direction: column;
@@ -370,6 +378,11 @@ form {
 
 @media (min-width: 700px) {
 
+  .fixed-cart {
+    top: 50px;
+    right: 50px;
+  }
+
   .featured-products {
     flex-direction: row;
     flex-wrap: wrap;
@@ -389,6 +402,10 @@ form {
     padding-bottom: 20px;
   }
 
+  .about-wrapper {
+    margin: 60px;
+  }
+
 }
 
 
@@ -397,16 +414,29 @@ form {
   .header h1 {
     font-size: 100px;
     margin: 60px;
-    }
+  }
 
   .nav-bar h2 {
     margin: 20px;
     font-size: 30px;
   }
 
+  .about-wrapper {
+    margin: 100px;
+  }
+
 }
 
 @media (min-width: 1200px) {
+
+  .fixed-cart {
+    top: 100px;
+    right: 100px;
+  }
+
+  .about-wrapper {
+    margin: 50px 200px;
+  }
 
   .footer {
     flex-direction: row;
