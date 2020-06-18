@@ -6,7 +6,10 @@ export const LoadingIndicator = () => {
 
   return (
     <>
-      {isLoading && <div>LOADING</div>}
+      {isLoading && <div className='page-wrapper'>
+        <img className='loader-svg' src={require('../images/loader.svg')} alt="loading" />
+        <p>loading..</p>
+      </div>}
     </>
   )
 }

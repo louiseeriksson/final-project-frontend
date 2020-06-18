@@ -17,10 +17,8 @@ export const ProductPage = (props) => {
   return (
     <div className='page-wrapper'>
       <h1 className='page-title'>SHOP</h1>
+      <LoadingIndicator />
       <div className='products'>
-
-        <LoadingIndicator />
-
         {allProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

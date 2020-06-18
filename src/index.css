@@ -210,6 +210,8 @@ a {
 
 .page-title {
  color: #343d30;
+ text-align: center;
+ margin: 22px;
 }
 
 .featured-products {
@@ -223,6 +225,25 @@ a {
 .home-img {
   padding: 20px;
   max-width: -webkit-fill-available
+}
+
+.loader-svg {
+  height: 50px;
+  width: 50px;
+  animation-name: loader;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+  50% {
+    height: 70px;
+    width: 70px;
+  }
+  100% {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .products {
@@ -317,6 +338,27 @@ a {
   transform: scale(1.05);
   text-shadow: 1px 1px 25px rgb(182, 180, 180);
   color: white;
+}
+
+.amount {
+  color: #343d30;
+}
+
+.user-not-logged-in-wrapper {
+  border: 1px solid #bbc7ca;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #bbc7ca;
+  margin: 2px;
+  padding-left: 10px;
+  color: #343d30;
 }
 
 .checkout-button, .form-button, .crt-widget .crt-load-more {

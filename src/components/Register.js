@@ -39,33 +39,33 @@ export const Register = () => {
     <form onSubmit={handleRegister}>
       {message && <p>{message}</p>}
       <label>
-        Namn:
-				<input
+        <input
+          className='input-field'
           type="text"
           required="true"
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
-          placeholder="namn"
+          placeholder="namn:"
         />
       </label>
       <label>
-        Mail:
-				<input
+        <input
+          className='input-field'
           type="email"
           required="true"
           value={userEmail}
           onChange={(e) => setUserEmail(e.target.value)}
-          placeholder="mail"
+          placeholder="mail:"
         />
       </label>
       <label>
-        Lösenord:
-				<input
+        <input
+          className='input-field'
           type="password"
           required="true"
           value={userPassword}
           onChange={(e) => setUserPassword(e.target.value)}
-          placeholder="lösenord"
+          placeholder="lösenord:"
         />
       </label>
       <button className='form-button' type="submit">REGISTRERA</button>
