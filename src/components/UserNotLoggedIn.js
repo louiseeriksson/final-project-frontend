@@ -41,7 +41,7 @@ export const UserNotLoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) =>
         <button className='form-button' type="submit">LOGGA IN</button>
       </form>
 
-      <h1 className='page-title'>ELLER REGISTRERA DIG HÄR:</h1>
+      <h1 className='page-title'>INTE MEDLEM? REGISTRERA DIG HÄR:</h1>
       <Register />
 
     </div>
