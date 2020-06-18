@@ -6,7 +6,7 @@ import { handleLogin } from 'reducers/authentication'
 export const UserNotLoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) => {
   const [userName, setUserName] = useState('')
   const [userPassword, setUserPassword] = useState('')
-  const [message, setMessage] = useState('')
+  // const [message, setMessage] = useState('')
 
   const dispatch = useDispatch()
   const handleSubmit = e => {
@@ -17,7 +17,7 @@ export const UserNotLoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) =>
     <div className='user-not-logged-in-wrapper'>
       <h1 className='page-title'>LOGGA IN HÄR:</h1>
       <form onSubmit={handleSubmit}>
-        {message && <p>{message}</p>}
+        {/* {message && <p>{message}</p>} */}
         <label>
           <input
             className='input-field'

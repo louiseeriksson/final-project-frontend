@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 // howdoes redux work here?
 export const LoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) => {
-  const username = 'bob'
   const [user, setUser] = useState('')
   console.log(currentUser)
 
@@ -32,7 +31,7 @@ export const LoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) => {
         setCurrentUser({})
       }
     },
-    [currentUser]
+    // [currentUser]
   )
 
   return (
