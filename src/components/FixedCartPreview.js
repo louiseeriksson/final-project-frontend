@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 export const FixedCartPreview = () => {
 
@@ -11,23 +12,19 @@ export const FixedCartPreview = () => {
     store.cart.items.reduce((total, item) => (total + (item.quantity)), 0)
   ))
 
-  // const sumProducts = useSelector((store) => store.cart.items)
-
   if (sumProducts === 0) {
     return (null)
   }
 
   return (
     <div>
-      <div className='fixed-cart'>
-
-        {/* if empty = dont show the cart */}
-
-        {/* how to show the sum of the items? */}
-        <p>({sumProducts})</p>
-
-        <p>{totalPrice}:-</p>
-      </div>
+      <Link
+        to='/cart'>
+        <div className='fixed-cart'>
+          <p>({sumProducts})</p>
+          <p>{totalPrice}:-</p>
+        </div>
+      </Link>
     </div>
   )
 }

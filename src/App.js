@@ -71,7 +71,7 @@ export const App = () => {
           <Route path='/products'>
             <ProductPage />
           </Route>
-          <Route path='/products/:productId'>
+          <Route path='/products/:id'>
             <ProductDetails />
           </Route>
           <Route path='/inspiration'>

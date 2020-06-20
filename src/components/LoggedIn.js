@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-// howdoes redux work here?
+// how does redux work here?
 export const LoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) => {
   const [user, setUser] = useState('')
   console.log(currentUser)

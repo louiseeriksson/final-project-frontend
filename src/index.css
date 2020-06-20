@@ -252,6 +252,10 @@ a {
   justify-content: center;
 }
 
+.product-card a {
+  color: #343d30
+}
+
 .product-card {
   min-width: 300px;
   max-width: 300px;

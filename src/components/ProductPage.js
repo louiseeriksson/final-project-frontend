@@ -19,9 +19,12 @@ export const ProductPage = (props) => {
       <h1 className='page-title'>SHOP</h1>
       <LoadingIndicator />
       <div className='products'>
+        {/* <Link
+          to={`/products/${product.id}`}> */}
         {allProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
+        {/* </Link> */}
       </div>
     </div>
   )
