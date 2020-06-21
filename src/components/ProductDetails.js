@@ -19,8 +19,8 @@ export const ProductDetails = () => {
     <div className='page-wrapper'>
       <h1 className='page-title'>{product.title}</h1>
 
-      <h3>{product.title}</h3>
       {product.img === '' ? '' : <img className='product-img' src={product.img} alt={product.title} />}
+      <h3>{product.title}</h3>
       <h5>{product.altName}</h5>
       <p>{product.info}</p>
       <p>{product.price}:-</p>
