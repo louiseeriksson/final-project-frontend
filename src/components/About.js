@@ -17,17 +17,21 @@ export const About = () => {
           <p>Louise Eriksson</p>
         </a>
 
-        <a href="https://www.linkedin.com/in/louise-eriksson/">
-          <p>LinkedIn</p>
-        </a>
+        <img className='about-img' src={require('../images/stickling_vaxt.png')} alt="från stickling till växt" />
 
-        <a href="https://louiseeriksson.netlify.app/">
-          <p>Portfolio</p>
-        </a>
+        <div className='about-contact'>
+          <a href="https://www.linkedin.com/in/louise-eriksson/">
+            <p>LinkedIn</p>
+          </a>
 
-        <a href="https://www.technigo.io/">
-          <p>technigo.io</p>
-        </a>
+          <a href="https://louiseeriksson.netlify.app/">
+            <p>Portfolio</p>
+          </a>
+
+          <a href="https://www.technigo.io/">
+            <p>technigo.io</p>
+          </a>
+        </div>
 
       </div>
 

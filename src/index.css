@@ -259,7 +259,7 @@ a {
 .product-card {
   min-width: 300px;
   max-width: 300px;
-  height: 400px;
+  height: auto;
   /* border: 1px solid green; */
   margin: 2px;
   padding: 15px;
@@ -269,6 +269,11 @@ a {
 .product-card:hover {
   transform: scale(1.02);
   box-shadow: #343d30;
+}
+
+.product-img {
+  height: 300px;
+  width: 300px;
 }
 
 .price-section {
@@ -305,6 +310,16 @@ a {
 
 .about-wrapper p {
   color: #343d30;
+}
+
+.about-img{
+  width: 100%;
+  padding: 20px 0;
+}
+
+.about-contact {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .items {

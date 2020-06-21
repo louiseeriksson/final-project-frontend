@@ -15,6 +15,8 @@ export const ProductCard = ({ product }) => {
       <Link
         to={`/products/${product.id}`}>
 
+        {product.img === '' ? '' : <img className='product-img' src={product.img} alt={product.title} />}
+
         <h3>{product.title}</h3>
         <h5>{product.altName}</h5>
         <p>{product.info}</p>
