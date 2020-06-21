@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 import { Register } from './Register'
 import { useDispatch } from 'react-redux'
 import { handleLogin } from 'reducers/authentication'
 
-export const UserNotLoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) => {
+export const UserNotLoggedIn = () => {
   const [userName, setUserName] = useState('')
   const [userPassword, setUserPassword] = useState('')
   // const [message, setMessage] = useState('')
+
+  const errorMessage = useSelector((state) => state.authentication.error)
 
   const dispatch = useDispatch()
   const handleSubmit = e => {
@@ -38,6 +41,9 @@ export const UserNotLoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) =>
             placeholder="lösenord:"
           />
         </label>
+
+        {errorMessage && <p>{errorMessage}</p>}
+
         <button className='form-button' type="submit">LOGGA IN</button>
       </form>
 

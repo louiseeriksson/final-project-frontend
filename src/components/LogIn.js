@@ -8,7 +8,7 @@ export const LogIn = () => {
   // const [currentUser, setCurrentUser] = useState({})
 
 
-  const user = useSelector((state) => state.authentication.accessToken)
+  const user = useSelector((state) => state.authentication.user)
 
   return (
     <div className='page-wrapper'>

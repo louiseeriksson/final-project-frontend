@@ -37,12 +37,12 @@ export const Register = () => {
 
   return (
     <form onSubmit={handleRegister}>
-      {message && <p>{message}</p>}
+
       <label>
         <input
           className='input-field'
           type="text"
-          required="true"
+          required={true}
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
           placeholder="namn:"
@@ -52,7 +52,7 @@ export const Register = () => {
         <input
           className='input-field'
           type="email"
-          required="true"
+          required={true}
           value={userEmail}
           onChange={(e) => setUserEmail(e.target.value)}
           placeholder="mail:"
@@ -62,12 +62,15 @@ export const Register = () => {
         <input
           className='input-field'
           type="password"
-          required="true"
+          required={true}
           value={userPassword}
           onChange={(e) => setUserPassword(e.target.value)}
           placeholder="lösenord:"
         />
       </label>
+
+      {message && <p>{message}</p>}
+
       <button className='form-button' type="submit">REGISTRERA</button>
     </form>
   )

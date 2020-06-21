@@ -1,43 +1,23 @@
 import React, { useState, useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import { authentication } from '../reducers/authentication'
 
 // how does redux work here?
-export const LoggedIn = ({ currentUser, setCurrentUser, setLoggedIn }) => {
-  const [user, setUser] = useState('')
-  console.log(currentUser)
+export const LoggedIn = () => {
 
-  useEffect(
-    () => {
-      const fetchData = async () => {
-        let response = await fetch(`https://final-project-louise.herokuapp.com/users/${currentUser._id}`, {
-          method: 'GET',
-          headers: {
-            Authorization: currentUser.accessToken,
-            'Content-Type': 'application/json;charset=utf-8'
-          }
-        })
+  const user = useSelector((state) => state.authentication.user)
 
-        let result = await response.json()
-        console.log('authorization result', result)
+  // console.log(currentUser)
 
-        if (result.name) {
-          setUser(result.name)
-        } else {
-          setLoggedIn(false)
-        }
-      }
-      fetchData()
 
-      return () => {
-        setCurrentUser({})
-      }
-    },
-    // [currentUser]
-  )
+  // hämta användaren från din reducer
+
+
 
   return (
     <div>
       <h1>HELLO {user.toUpperCase()} 👋🏼</h1>
-      <button onClick={() => setLoggedIn(false)}>SIGN OUT</button>
+      <button /*onClick={() => setLoggedIn(false)}*/>SIGN OUT</button>
     </div>
   )
 }
