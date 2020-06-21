@@ -1,25 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import { products } from 'reducers/products'
+import { fetchDetails } from 'reducers/products'
 
 export const ProductDetails = () => {
+
   const params = useParams()
-  console.log(params);
 
-  const productMatch = products.find((product) => product.id === params.id)
-  console.log(productMatch);
+  const dispatch = useDispatch()
+  useEffect(() => {
+    console.log("useEffect")
+    dispatch(fetchDetails(params.id))
+  }, [dispatch, params.id])
 
+  const product = useSelector((state) => state.products.details)
 
   return (
     <div className='page-wrapper'>
-      <h1 className='page-title'>{products.title}</h1>
+      <h1 className='page-title'>{product.title}</h1>
 
-      {/* add big image */}
-      {/* 
       <h3>{product.title}</h3>
+      {product.img === '' ? '' : <img className='product-img' src={product.img} alt={product.title} />}
       <h5>{product.altName}</h5>
       <p>{product.info}</p>
-      <p>{product.price}</p> */}
+      <p>{product.price}:-</p>
+
+      {/* add add-to-cart-button!! */}
 
 
     </div>

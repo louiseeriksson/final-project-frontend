@@ -68,7 +68,7 @@ export const App = () => {
           <Route path='/' exact>
             <Home />
           </Route>
-          <Route path='/products'>
+          <Route path='/products' exact>
             <ProductPage />
           </Route>
           <Route path='/products/:id'>
