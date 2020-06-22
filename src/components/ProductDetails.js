@@ -2,8 +2,9 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-
 import { fetchDetails } from 'reducers/products'
+import { cart } from 'reducers/cart'
+
 
 export const ProductDetails = () => {
 
@@ -34,8 +35,7 @@ export const ProductDetails = () => {
         <button
           className='add-to-cart-btn'
           type='button'
-        // onClick={() => dispatch(cart.actions.addItem(product))}
-        >
+          onClick={() => dispatch(cart.actions.addItem(product))}>
           LÄGG I VARUKORG
          </button>
       </div>
