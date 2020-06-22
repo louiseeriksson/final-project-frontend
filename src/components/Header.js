@@ -7,7 +7,7 @@ export const Header = () => {
     <div>
       <header className='header'>
 
-        {/* hamburger menu on smaller screens */}
+        {/* hamburger menu for smaller screens */}
         <nav role='navigation' className='hamburger-menu'>
           <div className='menu-toggle'>
             <input type="checkbox" />
@@ -63,11 +63,13 @@ export const Header = () => {
           </NavLink>
         </div>
 
+        {/* big title */}
         <Link
           to='/'>
           <h1>växt.nu</h1>
         </Link>
 
+        {/* preview of your cart if you've got products there */}
         <FixedCartPreview />
 
       </header>

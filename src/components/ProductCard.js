@@ -8,19 +8,16 @@ export const ProductCard = ({ product }) => {
 
   return (
     <div className='product-card'>
-      {/* <img>image</img> */}
       <Link
         to={`/products/${product.id}`}>
 
         {product.img === '' ? '' : <img className='product-img' src={product.img} alt={product.title} />}
-
         <h3>{product.title}</h3>
         <h5>{product.altName}</h5>
         <p>{product.info}</p>
 
         <div className='price-section'>
           <h2>{product.price}:-</h2>
-
           <button
             className='add-to-cart-btn'
             type='button'
@@ -28,6 +25,7 @@ export const ProductCard = ({ product }) => {
             LÄGG I VARUKORG
          </button>
         </div>
+
       </Link>
     </div>
   )

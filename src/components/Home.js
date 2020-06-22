@@ -1,33 +1,38 @@
-import React from 'react'
-// import React, { useEffect } from 'react'
-// import { useSelector, useDispatch } from 'react-redux'
-// import { fetchProducts } from 'reducers/products'
-// import { ProductCard } from './ProductCard'
-// import { LoadingIndicator } from './LoadingIndicator'
+import React, { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { fetchIsFeatured } from 'reducers/products'
+import { ProductCard } from './ProductCard'
+import { LoadingIndicator } from './LoadingIndicator'
 
 export const Home = (props) => {
 
-  // const dispatch = useDispatch()
-  // useEffect(() => {
-  //   console.log("useEffect")
-  //   dispatch(fetchProducts())
-  // }, [dispatch])
+  const dispatch = useDispatch()
+  useEffect(() => {
+    console.log("useEffect")
+    dispatch(fetchIsFeatured())
+  }, [dispatch])
 
-  // const featuredProducts = useSelector((state) => state.products.all.isFeatured)
+  const featuredProducts = useSelector((state) => state.products.isFeatured)
 
   return (
     <main>
-      {/* <section className='highlight-section'>
+      <div className='featured-products-wrapper'>
+        <h1 className='page-title'>
+          FAVORITER JUST NU:
+        </h1>
+
         <LoadingIndicator />
+
         <div className='products'>
           {featuredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
-      </section> */}
+      </div>
 
-      <section className=''>
+      <section className='home-img-wrapper'>
         <img className='home-img' src={require('images/greenhouse.jpg')} alt="our greenhouse" />
+        <h1 className='home-img-text'>BESÖK OSS</h1>
       </section>
 
     </main>
