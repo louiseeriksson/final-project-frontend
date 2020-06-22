@@ -304,6 +304,21 @@ a {
   color: white;
 }
 
+.go-back-arrow {
+  cursor: pointer;
+  color: #bbc7ca;
+  margin: 5px;
+}
+
+.product-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px 30px 20px;
+  color: #343d30;
+  align-items: center;
+  max-width: 500px;
+}
+
 .about-wrapper {
   margin: 20px;
 }

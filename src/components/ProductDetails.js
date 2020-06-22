@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
 import { fetchDetails } from 'reducers/products'
 
 export const ProductDetails = () => {
@@ -17,17 +19,26 @@ export const ProductDetails = () => {
 
   return (
     <div className='page-wrapper'>
+
+      <Link to='/products'>
+        <h5 className='go-back-arrow'>⬅︎ Tillbaka till produkterna</h5>
+      </Link>
+
       <h1 className='page-title'>{product.title}</h1>
-
-      {product.img === '' ? '' : <img className='product-img' src={product.img} alt={product.title} />}
-      <h3>{product.title}</h3>
-      <h5>{product.altName}</h5>
-      <p>{product.info}</p>
-      <p>{product.price}:-</p>
-
-      {/* add add-to-cart-button!! */}
-
-
+      <div className='product-details-wrapper'>
+        {product.img === '' ? '' : <img className='product-img' src={product.img} alt={product.title} />}
+        <h3>{product.title}</h3>
+        <h5>{product.altName}</h5>
+        <p>{product.info}</p>
+        <h5>{product.price}:-</h5>
+        <button
+          className='add-to-cart-btn'
+          type='button'
+        // onClick={() => dispatch(cart.actions.addItem(product))}
+        >
+          LÄGG I VARUKORG
+         </button>
+      </div>
     </div>
   )
 }
