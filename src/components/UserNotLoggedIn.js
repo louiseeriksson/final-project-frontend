@@ -21,6 +21,8 @@ export const UserNotLoggedIn = () => {
       <h1 className='page-title'>LOGGA IN HÄR:</h1>
       <form onSubmit={handleSubmit}>
         {/* {message && <p>{message}</p>} */}
+
+        {/* login-form funkar inte! allt är ok i backend, vad är fel i frontend? */}
         <label>
           <input
             className='input-field'
@@ -48,6 +50,8 @@ export const UserNotLoggedIn = () => {
       </form>
 
       <h1 className='page-title'>INTE MEDLEM? REGISTRERA DIG HÄR:</h1>
+
+      {/* register funkar! */}
       <Register />
 
     </div>

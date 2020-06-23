@@ -19,7 +19,7 @@ export const authentication = createSlice({
 })
 
 // Thunk
-export const handleLogin = (user) => {
+export const handleLogin = (email, password, accessToken) => {
   return (dispatch) => {
     dispatch(ui.actions.setLoading(true))
 
@@ -28,7 +28,7 @@ export const handleLogin = (user) => {
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
       },
-      body: JSON.stringify(user)
+      body: JSON.stringify({ email, password, accessToken }),
     })
       .then((res) => res.json())
       .then((json) => {
