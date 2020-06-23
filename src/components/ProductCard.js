@@ -14,7 +14,7 @@ export const ProductCard = ({ product }) => {
         {product.img === '' ? '' : <img className='product-img' src={product.img} alt={product.title} />}
         <h3>{product.title}</h3>
         <p className='product-alt-name'>({product.altName})</p>
-        <p>{product.info}</p>
+        <p className='product-info'>{product.info}</p>
       </Link>
 
       <div className='price-section'>

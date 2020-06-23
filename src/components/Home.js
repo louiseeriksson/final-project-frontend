@@ -18,7 +18,7 @@ export const Home = (props) => {
     <main>
       <div className='featured-products-wrapper'>
         <h1 className='page-title'>
-          FAVORITER JUST NU:
+          SOMMARTIPS
         </h1>
 
         <LoadingIndicator />
