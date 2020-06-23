@@ -4,9 +4,6 @@ import { UserNotLoggedIn } from './UserNotLoggedIn'
 import { LoggedIn } from './LoggedIn'
 
 export const LogIn = () => {
-  // const [loggedIn, setLoggedIn] = useState(false)
-  // const [currentUser, setCurrentUser] = useState({})
-
 
   const user = useSelector((state) => state.authentication.user)
 

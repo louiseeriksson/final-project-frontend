@@ -19,16 +19,17 @@ export const authentication = createSlice({
 })
 
 // Thunk
-export const handleLogin = (email, password, accessToken) => {
+export const handleLogin = ({ name, password }) => {
   return (dispatch) => {
     dispatch(ui.actions.setLoading(true))
+    console.log(`Thunk recieves`, name, password)
 
     fetch('https://final-project-louise.herokuapp.com/sessions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
       },
-      body: JSON.stringify({ email, password, accessToken }),
+      body: JSON.stringify({ name, password }),
     })
       .then((res) => res.json())
       .then((json) => {
@@ -39,6 +40,8 @@ export const handleLogin = (email, password, accessToken) => {
         } else {
           dispatch(authentication.actions.setErrorMessage({ error: 'Woops, something went wrong. Try again!' }))
         }
+        console.log(`This is the json:`, json)
+
 
         dispatch(ui.actions.setLoading(false))
       })

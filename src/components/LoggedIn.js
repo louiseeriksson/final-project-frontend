@@ -1,23 +1,17 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-// import { authentication } from '../reducers/authentication'
+import { authentication } from 'reducers/authentication'
 
-// how does redux work here?
 export const LoggedIn = () => {
 
   const user = useSelector((state) => state.authentication.user)
 
-  // console.log(currentUser)
-
-
-  // hämta användaren från din reducer
-
-
+  console.log(user.name);
 
   return (
     <div>
-      <h1>HELLO {user.toUpperCase()} 👋🏼</h1>
-      <button /*onClick={() => setLoggedIn(false)}*/>SIGN OUT</button>
+      <p>Hej {user.name} 👋🏼 &nbsp; Vad kul att du vill handla hos oss på växt.nu!</p>
+      {/* <button onClick={() => setUser}>SIGN OUT</button> */}
     </div>
   )
 }

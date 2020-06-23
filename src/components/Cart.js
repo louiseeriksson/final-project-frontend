@@ -25,7 +25,7 @@ export const Cart = () => {
       {totalPrice > 0 ? <h2 className='amount'>TOTALT PRIS: {totalPrice}:-</h2> : ''}
 
       <LogIn />
-      <h1 className='page-title'>ELLER.. GÅ TILL KASSAN UTAN ATT LOGGA IN HÄR:</h1>
+
       <button className='checkout-button'>TILL KASSAN</button>
     </div>
   )

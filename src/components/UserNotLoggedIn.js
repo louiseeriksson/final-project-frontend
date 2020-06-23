@@ -14,8 +14,10 @@ export const UserNotLoggedIn = () => {
   const dispatch = useDispatch()
   const handleSubmit = e => {
     e.preventDefault()
-    dispatch(handleLogin())
+    dispatch(handleLogin({ name: userName, password: userPassword }))
+    console.log({ name: userName, password: userPassword });
   }
+
   return (
     <div className='user-not-logged-in-wrapper'>
       <h1 className='page-title'>LOGGA IN HÄR:</h1>
