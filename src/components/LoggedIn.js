@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { authentication } from 'reducers/authentication'
+// import { authentication } from 'reducers/authentication'
 
 export const LoggedIn = () => {
 
