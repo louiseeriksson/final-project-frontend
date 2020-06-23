@@ -496,6 +496,12 @@ form {
     right: 50px;
   }
 
+  .home-img {
+    max-height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .home-img-text {
     font-size: 50px;
   }
