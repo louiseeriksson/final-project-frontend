@@ -22,7 +22,7 @@ export const Cart = () => {
 
       <div className='total'></div>
 
-      {totalPrice > 0 ? <h2 className='amount'>TOTALT PRIS: {totalPrice}:-</h2> : ''}
+      {totalPrice > 0 ? <h2 className='amount'>SUMMA: {totalPrice}:-</h2> : ''}
 
       <LogIn />
 
