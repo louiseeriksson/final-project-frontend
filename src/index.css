@@ -16,9 +16,7 @@ a {
   text-decoration: none;
 }
 
-.active {
-  border-bottom: 1px solid white;
-}
+/* HEADER */
 
 .header {
   background-image: url(./images/cactuses.jpg);
@@ -77,8 +75,6 @@ a {
 .menu-toggle {
   display: block;
   position: relative;
-  /* top: 50px;
-  left: 50px; */
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -90,26 +86,14 @@ a {
   transition: color 0.3s ease;
 }
 
-/* .menu-toggle a:hover {
-  transform: scale(1.05);
-  text-shadow: 1px 1px 25px rgb(182, 180, 180);
-  border-bottom: 1px solid;
-} */
-
-/* .menu-toggle a:hover h2 {
-  transform: scale(1.00)
-} */
-
 .menu-toggle input {
   display: block;
   width: 50px;
   height: 34px;
   position: absolute;
-  /* top: -7px;
-  left: -5px; */
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 
@@ -121,35 +105,24 @@ a {
   transform-origin: 0% 100%;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
- .menu-toggle input:checked ~ div {
+/* transform the burger to a crossmark */
+
+.menu-toggle input:checked ~ div {
   opacity: 1;
   transform: rotate(45deg) translate(0px, 14px);
   background: white;
 }
 
-/*
- * But let's hide the middle one.
- */
- .menu-toggle input:checked ~ div:nth-last-child(3) {
+
+.menu-toggle input:checked ~ div:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 .menu-toggle input:checked ~ div:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 .menu {
   position: absolute;
   width: 250px;
@@ -158,8 +131,6 @@ a {
   background: #bcc7b6;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -178,6 +149,10 @@ a {
 
 
 /* nav-bar */
+
+.active {
+  border-bottom: 1px solid white;
+}
 
 .nav-bar {
   display: none
@@ -202,6 +177,8 @@ a {
   text-shadow: 1px 1px 25px rgb(182, 180, 180);
 }
 
+/* GENERAL STYLING FOR ALL THE PAGES */
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -214,13 +191,24 @@ a {
  margin: 22px;
 }
 
-/* .featured-products {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px
-} */
+.loader-svg {
+  height: 50px;
+  width: 50px;
+  animation-name: loader;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+  50% {
+    width: 80px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
+/*  HOME-COMPONENT */
 
 .featured-products-wrapper {
   background-color: #bbc7ca;
@@ -248,22 +236,7 @@ a {
   max-width: -webkit-fill-available
 }
 
-.loader-svg {
-  height: 50px;
-  width: 50px;
-  animation-name: loader;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes loader {
-  50% {
-    width: 80px;
-  }
-  100% {
-    width: 50px;
-  }
-}
+/* SHOP-COMPONENT */
 
 .products {
   display: flex;
@@ -338,6 +311,8 @@ a {
   max-width: 500px;
 }
 
+/* ABOUT-COMPONENT */
+
 .about-wrapper {
   margin: 20px;
 }
@@ -356,6 +331,8 @@ a {
   justify-content: space-evenly;
 }
 
+/* CART-COMPONENT */
+
 .items {
   display: flex;
   flex-direction: column;
@@ -364,7 +341,6 @@ a {
 }
 
 .cart-item {
-  /* border: 1px solid rgb(170, 167, 167); */
   margin: 10px;
   display: flex;
   justify-content: space-between;
@@ -444,9 +420,13 @@ form {
   flex-direction: column;
 }
 
+/* INSTAGRAM-COMPONENT */
+
 .instagram-text {
   display: none;
 }
+
+/* FOOTER */
 
 .footer {
   background-color: #bbc7ca;

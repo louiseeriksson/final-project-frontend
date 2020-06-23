@@ -33,6 +33,7 @@ export const Home = (props) => {
       <section className='home-img-wrapper'>
         <img className='home-img' src={require('images/greenhouse.jpg')} alt="our greenhouse" />
         <h1 className='home-img-text'>BESÖK OSS</h1>
+        {/* add a link? */}
       </section>
 
     </main>
