@@ -25,13 +25,14 @@ export const ProductDetails = () => {
         <h5 className='go-back-arrow'>⬅︎ Tillbaka till produkterna</h5>
       </Link>
 
-      <h1 className='page-title'>{product.title}</h1>
       <div className='product-details-wrapper'>
         {product.img === '' ? '' : <img className='product-img' src={product.img} alt={product.title} />}
-        <h3>{product.title}</h3>
-        <h5>{product.altName}</h5>
+
+        <h1 className='page-title'>{product.title}</h1>
+        <p className='product-alt-name'>({product.altName})</p>
         <p>{product.info}</p>
-        <h5>{product.price}:-</h5>
+        <h3>{product.price}:-</h3>
+
         <button
           className='add-to-cart-btn'
           type='button'

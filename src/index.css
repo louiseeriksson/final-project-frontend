@@ -268,10 +268,16 @@ a {
   width: 300px;
 }
 
+
 .price-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.product-alt-name {
+  font-style: italic;
+  margin: 0 0 20px 0;
 }
 
 .price-section h2 {
@@ -310,6 +316,11 @@ a {
   align-items: center;
   max-width: 500px;
 }
+/* 
+.product-details-info {
+  display: flex;
+  flex-direction: column;
+} */
 
 /* ABOUT-COMPONENT */
 
@@ -344,8 +355,8 @@ a {
   margin: 10px;
   display: flex;
   justify-content: space-between;
-  width: -webkit-fill-available;
-  color: #343d30
+  color: #343d30;
+  width: 100%;
 }
 
 .cart-item-button {
@@ -418,6 +429,12 @@ a {
 form {
   display: flex;
   flex-direction: column;
+}
+
+.logged-in-message {
+  color: #343d30;
+  margin: 20px;
+  text-align: center;
 }
 
 /* INSTAGRAM-COMPONENT */

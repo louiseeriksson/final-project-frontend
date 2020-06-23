@@ -10,7 +10,7 @@ export const LoggedIn = () => {
 
   return (
     <div>
-      <p>Hej {user.name} 👋🏼 &nbsp; Vad kul att du vill handla hos oss på växt.nu!</p>
+      <p className='logged-in-message'>Hej {user.name} 👋🏼 &nbsp; Vad kul att du vill handla hos oss på växt.nu!</p>
       {/* <button onClick={() => setUser}>SIGN OUT</button> */}
     </div>
   )

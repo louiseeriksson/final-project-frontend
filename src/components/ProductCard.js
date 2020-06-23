@@ -13,7 +13,7 @@ export const ProductCard = ({ product }) => {
 
         {product.img === '' ? '' : <img className='product-img' src={product.img} alt={product.title} />}
         <h3>{product.title}</h3>
-        <h5>{product.altName}</h5>
+        <p className='product-alt-name'>({product.altName})</p>
         <p>{product.info}</p>
       </Link>
 
