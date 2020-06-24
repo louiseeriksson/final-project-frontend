@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { CartItem } from './CartItem'
 import { LogIn } from './LogIn'
@@ -28,7 +29,10 @@ export const Cart = () => {
 
       <LogIn />
 
-      {user && <button className='checkout-button'>TILL KASSAN</button>}
+      {user &&
+        <Link to='/checkout'>
+          <button className='checkout-button'>TILL KASSAN</button>
+        </Link>}
     </div>
   )
 }

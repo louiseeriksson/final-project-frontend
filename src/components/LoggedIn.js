@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Checkout } from './Checkout'
 // import { authentication } from 'reducers/authentication'
 
 export const LoggedIn = () => {
@@ -11,7 +12,6 @@ export const LoggedIn = () => {
   return (
     <div>
       <p className='message'>Hej {user.name} 👋🏼 &nbsp; Vad kul att du vill handla hos oss på växt.nu!</p>
-      {/* <button onClick={() => setUser}>SIGN OUT</button> */}
     </div>
   )
 }
