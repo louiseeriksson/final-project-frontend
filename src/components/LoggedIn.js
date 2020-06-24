@@ -1,7 +1,5 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { Checkout } from './Checkout'
-// import { authentication } from 'reducers/authentication'
 
 export const LoggedIn = () => {
 

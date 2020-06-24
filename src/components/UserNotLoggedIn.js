@@ -7,7 +7,6 @@ import { handleLogin } from 'reducers/authentication'
 export const UserNotLoggedIn = () => {
   const [userName, setUserName] = useState('')
   const [userPassword, setUserPassword] = useState('')
-  const [message, setMessage] = useState('')
 
   const errorMessage = useSelector((state) => state.authentication.error)
 
@@ -22,7 +21,6 @@ export const UserNotLoggedIn = () => {
     <div className='user-not-logged-in-wrapper'>
       <h1 className='page-title'>LOGGA IN HÄR:</h1>
       <form onSubmit={handleSubmit}>
-        {message && <p>{message}</p>}
 
         <label>
           <input
