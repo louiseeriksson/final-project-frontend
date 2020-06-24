@@ -254,7 +254,7 @@ a {
   height: auto;
   border: 1px solid white;
   margin: 2px;
-  padding: 15px 15px 20px 15px;
+  padding: 15px 15px 30px 15px;
   color: #343d30
 }
 
@@ -297,7 +297,7 @@ border: 1px solid #bbc7ca;
   padding: 10px 20px;
   border: 1px solid #bbc7ca;
   border-radius: 20px;
-  color: #bbc7ca;
+  color: #8e9ea1;
   font-weight: 600;
   background-color: white;
 }
@@ -332,7 +332,7 @@ border: 1px solid #bbc7ca;
 /* ABOUT-COMPONENT */
 
 .about-wrapper {
-  margin: 20px;
+  margin: 0 20px 20px 20px;
 }
 
 .about-wrapper p {
@@ -512,7 +512,7 @@ form {
   }
 
   .about-wrapper {
-    margin: 60px;
+    margin: 0 60px 60px 60px;
   }
 
 }
@@ -531,7 +531,7 @@ form {
   }
 
   .about-wrapper {
-    margin: 100px;
+    margin: 0 100px 100px 100px;
   }
 
 }
@@ -544,7 +544,7 @@ form {
   }
 
   .about-wrapper {
-    margin: 50px 200px;
+    margin: 10px 200px 50px 200px;
   }
 
   .footer {
