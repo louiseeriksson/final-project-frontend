@@ -26,12 +26,12 @@ export const Register = () => {
     let result = await response.json()
     if (result.name) {
       console.log('fetch result', result)
-      setMessage(`user ${result.name} was created`)
+      setMessage(`${result.name} är nu en registrerad användare!`)
       setUserName('')
       setUserPassword('')
       setUserEmail('')
     } else {
-      setMessage('could not save user')
+      setMessage('Kunde inte registrera användare. Testa igen!')
     }
   }
 
@@ -69,7 +69,7 @@ export const Register = () => {
         />
       </label>
 
-      {message && <p>{message}</p>}
+      {message && <p className='message'>{message}</p>}
 
       <button className='form-button' type="submit">REGISTRERA</button>
     </form>

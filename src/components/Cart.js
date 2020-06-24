@@ -10,6 +10,8 @@ export const Cart = () => {
     store.cart.items.reduce((total, item) => (total + (item.price * item.quantity)), 0)
   ))
 
+  const user = useSelector((state) => state.authentication.user)
+
   return (
     <div className='page-wrapper'>
       <h1 className='page-title'>VARUKORG</h1>
@@ -26,7 +28,7 @@ export const Cart = () => {
 
       <LogIn />
 
-      <button className='checkout-button'>TILL KASSAN</button>
+      {user && <button className='checkout-button'>TILL KASSAN</button>}
     </div>
   )
 }

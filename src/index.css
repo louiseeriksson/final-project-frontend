@@ -404,7 +404,7 @@ border: 1px solid #bbc7ca;
   height: 30px;
   border: 1px solid #bbc7ca;
   margin: 2px;
-  padding-left: 10px;
+  padding: 0 10px;
   color: #343d30;
 }
 
@@ -413,7 +413,7 @@ border: 1px solid #bbc7ca;
   padding: 10px 20px;
   border: 1px solid #bbc7ca;
   border-radius: 25px;
-  color: #bbc7ca;
+  color: #8e9ea1;
   font-size: 25px;
   font-weight: 600;
   background-color: white;
@@ -438,7 +438,7 @@ form {
   flex-direction: column;
 }
 
-.logged-in-message {
+.message {
   color: #343d30;
   margin: 20px;
   text-align: center;
